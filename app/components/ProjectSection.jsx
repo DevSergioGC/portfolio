@@ -2,63 +2,9 @@
 import React, { useState } from "react";
 import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
+import generalData from "../data/generalData.json";
 
-const projectsData = [
-  {
-    id: 1,
-    title: "Project #1",
-    description: "Description #1",
-    imgUrl: "/images/projects/1.png",
-    gitUrl: "https://github.com",
-    previewUrl: "https://github.com/DevSergioGC",
-    tag: ["All", "Web"],
-  },
-  {
-    id: 2,
-    title: "Project #2",
-    description: "Description #2",
-    imgUrl: "/images/projects/2.png",
-    gitUrl: "https://github.com",
-    previewUrl: "https://github.com/DevSergioGC",
-    tag: ["All", "Web"],
-  },
-  {
-    id: 3,
-    title: "Project #3",
-    description: "Description #3",
-    imgUrl: "/images/projects/3.png",
-    gitUrl: "https://github.com",
-    previewUrl: "https://github.com/DevSergioGC",
-    tag: ["All", "Web"],
-  },
-  {
-    id: 4,
-    title: "Project #4",
-    description: "Description #4",
-    imgUrl: "/images/projects/4.png",
-    gitUrl: "https://github.com",
-    previewUrl: "https://github.com/DevSergioGC",
-    tag: ["All", "Mobile"],
-  },
-  {
-    id: 5,
-    title: "Project #5",
-    description: "Description #5",
-    imgUrl: "/images/projects/5.png",
-    gitUrl: "https://github.com",
-    previewUrl: "https://github.com/DevSergioGC",
-    tag: ["All", "Mobile"],
-  },
-  {
-    id: 6,
-    title: "Project #6",
-    description: "Description #6",
-    imgUrl: "/images/projects/6.png",
-    gitUrl: "https://github.com",
-    previewUrl: "https://github.com/DevSergioGC",
-    tag: ["All", "Mobile"],
-  },
-];
+const projectsData = generalData.projects;
 
 const ProjectSection = () => {
   const [tag, setTag] = useState("All");
@@ -94,10 +40,10 @@ const ProjectSection = () => {
         />
       </div>
       <div className="grid md:grid-cols-3 gap-8 md:gap-12">
-        {filteredProjects.map((project) => (
+        {filteredProjects.map((project, index) => (
           <ProjectCard
-            key={project.id}
-            title={project.title}
+            key={index}
+            title={project.name}
             description={project.description}
             imgUrl={project.imgUrl}
             tags={project.tag}
