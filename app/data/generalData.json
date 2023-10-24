@@ -1,0 +1,102 @@
+{
+  "skills": [
+    {
+      "name": "Python"
+    },
+    {
+      "name": "C#"
+    },
+    {
+      "name": "JavaScript"
+    },
+    {
+      "name": "HTML"
+    },
+    {
+      "name": "CSS"
+    }
+  ],
+  "education": [],
+  "certificates": [
+    {
+      "name": "Certificate 1",
+      "description": "This is a certificate",
+      "link": "",
+      "image": ""
+    },
+    {
+      "name": "Certificate 2",
+      "description": "This is a certificate",
+      "link": "",
+      "image": ""
+    },
+    {
+      "name": "Certificate 3",
+      "description": "This is a certificate",
+      "link": "",
+      "image": ""
+    },
+    {
+      "name": "Certificate 4",
+      "description": "This is a certificate",
+      "link": "",
+      "image": ""
+    },
+    {
+      "name": "Certificate 5",
+      "description": "This is a certificate",
+      "link": "",
+      "image": ""
+    },
+    {
+      "name": "Certificate 6",
+      "description": "This is a certificate",
+      "link": "",
+      "image": ""
+    }
+  ],
+  "projects": [
+    {
+      "name": "Project 1",
+      "description": "This is a project",
+      "link": "",
+      "image": "",
+      "technologies": ["Java", "Python"]
+    },
+    {
+      "name": "Project 2",
+      "description": "This is a project",
+      "link": "",
+      "image": "",
+      "technologies": ["Java", "Python"]
+    },
+    {
+      "name": "Project 3",
+      "description": "This is a project",
+      "link": "",
+      "image": "",
+      "technologies": ["Java", "Python"]
+    },
+    {
+      "name": "Project 4",
+      "description": "This is a project",
+      "link": "",
+      "image": "",
+      "technologies": ["Java", "Python"]
+    },
+    {
+      "name": "Project 5",
+      "description": "This is a project",
+      "link": "",
+      "image": "",
+      "technologies": ["Java", "Python"]
+    },
+    {
+      "name": "Project 6",
+      "description": "This is a project",
+      "link": "",
+      "image": "",
+      "technologies": ["Java", "Python"]
+    }
+  ]
+}
