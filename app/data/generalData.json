@@ -1,0 +1,121 @@
+{
+  "skills": [
+    {
+      "name": "Python"
+    },
+    {
+      "name": "C#"
+    },
+    {
+      "name": "JavaScript"
+    },
+    {
+      "name": "HTML"
+    },
+    {
+      "name": "CSS"
+    }
+  ],
+  "education": [
+    {
+      "name": "Education #1",
+      "description": "This is an education"
+    },
+    {
+      "name": "Education #2",
+      "description": "This is an education"
+    },
+    {
+      "name": "Education #3",
+      "description": "This is an education"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certificate 1",
+      "description": "This is a certificate",
+      "link": "",
+      "image": ""
+    },
+    {
+      "name": "Certificate 2",
+      "description": "This is a certificate",
+      "link": "",
+      "image": ""
+    },
+    {
+      "name": "Certificate 3",
+      "description": "This is a certificate",
+      "link": "",
+      "image": ""
+    },
+    {
+      "name": "Certificate 4",
+      "description": "This is a certificate",
+      "link": "",
+      "image": ""
+    },
+    {
+      "name": "Certificate 5",
+      "description": "This is a certificate",
+      "link": "",
+      "image": ""
+    },
+    {
+      "name": "Certificate 6",
+      "description": "This is a certificate",
+      "link": "",
+      "image": ""
+    }
+  ],
+  "projects": [
+    {
+      "name": "Project 1",
+      "description": "This is a project",
+      "imgUrl": "/images/projects/1.png",
+      "gitUrl": "https://github.com",
+      "previewUrl": "https://github.com/DevSergioGC",
+      "tag": ["All", "Web"]
+    },
+    {
+      "name": "Project 2",
+      "description": "This is a project",
+      "imgUrl": "/images/projects/2.png",
+      "gitUrl": "https://github.com",
+      "previewUrl": "https://github.com/DevSergioGC",
+      "tag": ["All", "Web"]
+    },
+    {
+      "name": "Project 3",
+      "description": "This is a project",
+      "imgUrl": "/images/projects/3.png",
+      "gitUrl": "https://github.com",
+      "previewUrl": "https://github.com/DevSergioGC",
+      "tag": ["All", "Web"]
+    },
+    {
+      "name": "Project 4",
+      "description": "This is a project",
+      "imgUrl": "/images/projects/4.png",
+      "gitUrl": "https://github.com",
+      "previewUrl": "https://github.com/DevSergioGC",
+      "tag": ["All", "Web"]
+    },
+    {
+      "name": "Project 5",
+      "description": "This is a project",
+      "imgUrl": "/images/projects/5.png",
+      "gitUrl": "https://github.com",
+      "previewUrl": "https://github.com/DevSergioGC",
+      "tag": ["All", "Mobile"]
+    },
+    {
+      "name": "Project 6",
+      "description": "This is a project",
+      "imgUrl": "/images/projects/6.png",
+      "gitUrl": "https://github.com",
+      "previewUrl": "https://github.com/DevSergioGC",
+      "tag": ["All", "Mobile"]
+    }
+  ]
+}
