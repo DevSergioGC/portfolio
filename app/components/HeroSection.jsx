@@ -15,7 +15,7 @@ function HeroSection() {
           className="col-span-7 place-self-center text-center sm:text-left"
         >
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#36C4E5] to-[#E3223E]">
               Hello, I'm {""}
             </span>
             <br />
@@ -33,11 +33,11 @@ function HeroSection() {
             ways to improve my skills and learn new ones.
           </p>
           <div>
-            <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white">
+            <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-[#36C4E5] via-[#E5624F] to-[#E3223E] hover:bg-slate-200 text-white">
               Hire Me
             </button>
-            <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-800 text-white border  mt-3">
-              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+            <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-[#36C4E5] via-[#E5624F] to-[#E3223E] hover:bg-slate-800 text-white border  mt-3">
+              <span className="block bg-[#333232c5] hover:bg-slate-600 rounded-full px-5 py-2">
                 Download CV
               </span>
             </button>

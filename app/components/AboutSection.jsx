@@ -47,7 +47,7 @@ function AboutSection() {
         {dataSelected.map((item, index) => (
           <button
             id={index}
-            className="square px-3 py-2 text-xl md:text-md cursor-pointer bg-slate-800 hover:bg-slate-600 rounded-md"
+            className="square px-3 py-2 text-xl md:text-md cursor-pointer "
           >
             {item.name}
           </button>
