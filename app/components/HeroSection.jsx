@@ -16,7 +16,7 @@ function HeroSection() {
         >
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#36C4E5] to-[#E3223E]">
-              Hello, I'm {""}
+              Hello, I&apos;m {""}
             </span>
             <br />
             <TypeAnimation
@@ -27,10 +27,11 @@ function HeroSection() {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            I'm a Full Stack Developer with a passion for learning and creating
-            new things. I'm currently looking for a new opportunity to grow and
-            learn. I'm a hard worker and a team player. I'm always looking for
-            ways to improve my skills and learn new ones.
+            I&apos;m a Backend Developer with a passion for learning and
+            creating new things. I&apos;m currently looking for a new
+            opportunity to grow and learn. I'm a hard worker and a team player.
+            I&apos;m always looking for ways to improve my skills and learn new
+            ones.
           </p>
           <div>
             <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-[#36C4E5] via-[#E5624F] to-[#E3223E] hover:bg-slate-200 text-white">
