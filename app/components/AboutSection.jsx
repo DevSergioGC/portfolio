@@ -3,6 +3,7 @@ import React, { useTransition, useState } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
 import generalData from "../data/generalData.json";
+import IconSquare from "./IconSquare";
 
 function AboutSection() {
   const [tab, setTab] = useState("skills");
@@ -29,29 +30,26 @@ function AboutSection() {
           Skills {""}
         </TabButton>
         <TabButton
-          selectTab={() => handleTabChange("certifications")}
-          active={tab === "certifications"}
+          selectTab={() => handleTabChange("education")}
+          active={tab === "education"}
         >
           {""}
           Education {""}
         </TabButton>
         <TabButton
-          selectTab={() => handleTabChange("education")}
-          active={tab === "education"}
+          selectTab={() => handleTabChange("certification")}
+          active={tab === "certification"}
         >
           {""}
           Certifications {""}
         </TabButton>
       </div>
-      <div className="grid md:grid-cols-2 xl:grid-cols-5 gap-4 mt-6 mb-8">
-        {dataSelected.map((item, index) => (
-          <button
-            id={index}
-            className="square px-3 py-2 text-xl md:text-md cursor-pointer "
-          >
-            {item.name}
-          </button>
-        ))}
+      <div className="flex flex-col items-center justify-center p-10 mt-6 mb-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          {dataSelected.map((item, index) => (
+            <IconSquare name={item.name} index={index} tab={tab} />
+          ))}
+        </div>
       </div>
     </section>
   );
