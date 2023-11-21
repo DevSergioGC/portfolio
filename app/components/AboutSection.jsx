@@ -17,7 +17,7 @@ function AboutSection() {
   };
 
   return (
-    <section className="text-white">
+    <section className="text-white" id="about">
       <h2 className="text-center text-4xl font-bold text-white mt-8 mb-8 md:mb-12">
         Title
       </h2>
@@ -26,28 +26,25 @@ function AboutSection() {
           selectTab={() => handleTabChange("skills")}
           active={tab === "skills"}
         >
-          {""}
-          Skills {""}
+          Skills
         </TabButton>
         <TabButton
           selectTab={() => handleTabChange("education")}
           active={tab === "education"}
         >
-          {""}
-          Education {""}
+          Education
         </TabButton>
         <TabButton
           selectTab={() => handleTabChange("certification")}
           active={tab === "certification"}
         >
-          {""}
-          Certifications {""}
+          Certifications
         </TabButton>
       </div>
       <div className="flex flex-col items-center justify-center p-10 mt-6 mb-6">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {dataSelected.map((item, index) => (
-            <IconSquare name={item.name} index={index} tab={tab} />
+            <IconSquare name={item.name} key={index} tab={tab} />
           ))}
         </div>
       </div>
