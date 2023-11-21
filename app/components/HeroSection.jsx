@@ -23,11 +23,11 @@ function HeroSection() {
               sequence={["Sergio!", 2500, "Backend Developer", 2500]}
               wrapper="span"
               speed={50}
-              repeat={Infinity}
+              repeat={0}
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            I&apos;m a Backend Developer with a passion for learning and
+            I&apos;m Sergio, a Backend Developer with a passion for learning and
             creating new things. I&apos;m currently looking for a new
             opportunity to grow and learn. I'm a hard worker and a team player.
             I&apos;m always looking for ways to improve my skills and learn new
