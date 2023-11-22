@@ -29,7 +29,7 @@ function HeroSection() {
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
             I&apos;m Sergio, a Backend Developer with a passion for learning and
             creating new things. I&apos;m currently looking for a new
-            opportunity to grow and learn. I'm a hard worker and a team player.
+            opportunity to grow and learn. I&apos;m a hard worker and a team player.
             I&apos;m always looking for ways to improve my skills and learn new
             ones.
           </p>
@@ -54,7 +54,7 @@ function HeroSection() {
             <Image
               src="/images/hero-image.png"
               alt="Hero Image"
-              className="absolute transfrom -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-full"
               width={500}
               height={500}
             />

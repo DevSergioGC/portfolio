@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const IconSquare = ({ name, tab, index }) => {
   const boxStyle = [
-    "bg-gray-800 rounded-md p-4 text-white flex flex-col items-center",
-    "bg-gray-800 rounded-md p-4 text-white flex flex-col items-center hover:bg-gray-600 hover:cursor-pointer",
+    "bg-[#181818] rounded-md p-4 text-white flex flex-col items-center",
+    "bg-[#181818] rounded-md p-4 text-white flex flex-col items-center hover:bg-gray-500 hover:cursor-pointer",
   ];
 
   return (

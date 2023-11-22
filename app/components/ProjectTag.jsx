@@ -9,7 +9,7 @@ const ProjectTag = ({ name, onClick, isSelected }) => {
       className={`${buttonStyles} rounded-full border-2 px-6 py-2 text-xl cursor-pointer`}
       onClick={() => onClick(name)}
     >
-      {name}
+      {name.toUpperCase()}
     </button>
   );
 };
