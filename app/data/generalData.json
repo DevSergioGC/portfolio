@@ -156,34 +156,34 @@
   ],
   "projects": [
     {
-      "name": "Project 1",
-      "description": "This is a project",
+      "name": "Password Manager (Backend)",
+      "description": "Password Manager is a project that allows you to store your passwords in a secure way. Desing with Django and Django Rest Framework.",
       "imgUrl": "/images/projects/1.png",
-      "gitUrl": "https://github.com",
+      "gitUrl": "https://github.com/DevSergioGC/password-manager-backend-refactor",
       "previewUrl": "https://github.com/DevSergioGC",
-      "tag": ["all", "backend", "frontend", "test"]
+      "tag": ["all", "backend"]
     },
     {
-      "name": "Project 2",
-      "description": "This is a project",
+      "name": "Password Manager (Frontend)",
+      "description": "Password Manager is a project that allows you to store your passwords in a secure way. Desing with ReactJS",
       "imgUrl": "/images/projects/2.png",
-      "gitUrl": "https://github.com",
+      "gitUrl": "https://github.com/DevSergioGC/Password-Manager-Frontend-CCNT-",
       "previewUrl": "https://github.com/DevSergioGC",
-      "tag": ["all", "backend"]
+      "tag": ["all", "frontend"]
     },
     {
-      "name": "Project 3",
-      "description": "This is a project",
+      "name": "Store API",
+      "description": "RestAPI of a store. Desing with Flask and Python.",
       "imgUrl": "/images/projects/3.png",
-      "gitUrl": "https://github.com",
+      "gitUrl": "https://github.com/DevSergioGC/Flask-first_rest_API",
       "previewUrl": "https://github.com/DevSergioGC",
       "tag": ["all", "backend"]
     },
     {
-      "name": "Project 4",
-      "description": "This is a project",
+      "name": "Products API",
+      "description": "Small product rest api with express and nodejs.",
       "imgUrl": "/images/projects/4.png",
-      "gitUrl": "https://github.com",
+      "gitUrl": "https://github.com/DevSergioGC/api-rest-2",
       "previewUrl": "https://github.com/DevSergioGC",
       "tag": ["all", "backend"]
     },
