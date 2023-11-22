@@ -143,6 +143,17 @@
       "image": ""
     }
   ],
+  "tags": [
+    {
+      "name": "all"
+    },
+    {
+      "name": "backend"
+    },
+    {
+      "name": "frontend"
+    }
+  ],
   "projects": [
     {
       "name": "Project 1",
@@ -150,7 +161,7 @@
       "imgUrl": "/images/projects/1.png",
       "gitUrl": "https://github.com",
       "previewUrl": "https://github.com/DevSergioGC",
-      "tag": ["All", "Web"]
+      "tag": ["all", "backend", "frontend", "test"]
     },
     {
       "name": "Project 2",
@@ -158,7 +169,7 @@
       "imgUrl": "/images/projects/2.png",
       "gitUrl": "https://github.com",
       "previewUrl": "https://github.com/DevSergioGC",
-      "tag": ["All", "Web"]
+      "tag": ["all", "backend"]
     },
     {
       "name": "Project 3",
@@ -166,7 +177,7 @@
       "imgUrl": "/images/projects/3.png",
       "gitUrl": "https://github.com",
       "previewUrl": "https://github.com/DevSergioGC",
-      "tag": ["All", "Web"]
+      "tag": ["all", "backend"]
     },
     {
       "name": "Project 4",
@@ -174,7 +185,7 @@
       "imgUrl": "/images/projects/4.png",
       "gitUrl": "https://github.com",
       "previewUrl": "https://github.com/DevSergioGC",
-      "tag": ["All", "Web"]
+      "tag": ["all", "backend"]
     },
     {
       "name": "Project 5",
@@ -182,7 +193,7 @@
       "imgUrl": "/images/projects/5.png",
       "gitUrl": "https://github.com",
       "previewUrl": "https://github.com/DevSergioGC",
-      "tag": ["All", "Mobile"]
+      "tag": ["all", "frontend"]
     },
     {
       "name": "Project 6",
@@ -190,7 +201,7 @@
       "imgUrl": "/images/projects/6.png",
       "gitUrl": "https://github.com",
       "previewUrl": "https://github.com/DevSergioGC",
-      "tag": ["All", "Mobile"]
+      "tag": ["all", "frontend"]
     }
   ]
 }
