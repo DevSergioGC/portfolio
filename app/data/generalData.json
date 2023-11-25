@@ -93,7 +93,7 @@
       "description": "This is an education"
     }
   ],
-  "certification": [
+  "certifications": [
     {
       "name": "Git and GitHub Professional",
       "description": "This is a certificate",
