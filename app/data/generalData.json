@@ -14,6 +14,69 @@
     },
     {
       "name": "CSS"
+    },
+    {
+      "name": "Django"
+    },
+    {
+      "name": "Flask"
+    },
+    {
+      "name": "ReactJS"
+    },
+    {
+      "name": "NextJS"
+    },
+    {
+      "name": "Material UI"
+    },
+    {
+      "name": "RestAPI"
+    },
+    {
+      "name": "NodeJS"
+    },
+    {
+      "name": "Express"
+    },
+    {
+      "name": "NestJS"
+    },
+    {
+      "name": "Wordpress"
+    },
+    {
+      "name": "Frappe"
+    },
+    {
+      "name": "Redis"
+    },
+    {
+      "name": "SQL"
+    },
+    {
+      "name": "MySQL"
+    },
+    {
+      "name": "Java"
+    },
+    {
+      "name": "PostgreSQL"
+    },
+    {
+      "name": "GCP"
+    },
+    {
+      "name": "Google Workspace"
+    },
+    {
+      "name": "Docker"
+    },
+    {
+      "name": "Git"
+    },
+    {
+      "name": "SOLID"
     }
   ],
   "education": [
@@ -32,74 +95,97 @@
   ],
   "certifications": [
     {
-      "name": "Certificate 1",
+      "name": "Git and GitHub Professional",
       "description": "This is a certificate",
       "link": "",
       "image": ""
     },
     {
-      "name": "Certificate 2",
+      "name": "Frontend Developer Practical",
       "description": "This is a certificate",
       "link": "",
       "image": ""
     },
     {
-      "name": "Certificate 3",
+      "name": "Introduction to Terminal and Command Line",
       "description": "This is a certificate",
       "link": "",
       "image": ""
     },
     {
-      "name": "Certificate 4",
+      "name": "Frontend Developer",
       "description": "This is a certificate",
       "link": "",
       "image": ""
     },
     {
-      "name": "Certificate 5",
+      "name": "Backend Course with NestJS",
       "description": "This is a certificate",
       "link": "",
       "image": ""
     },
     {
-      "name": "Certificate 6",
+      "name": "Basic JavaScript",
+      "description": "This is a certificate",
+      "link": "",
+      "image": ""
+    },
+    {
+      "name": "Basic Computer and IT",
+      "description": "This is a certificate",
+      "link": "",
+      "image": ""
+    },
+    {
+      "name": "REST APIs with Flask and Python",
       "description": "This is a certificate",
       "link": "",
       "image": ""
     }
   ],
+  "tags": [
+    {
+      "name": "all"
+    },
+    {
+      "name": "backend"
+    },
+    {
+      "name": "frontend"
+    }
+  ],
   "projects": [
     {
-      "name": "Project 1",
-      "description": "This is a project",
+      "name": "Password Manager (Backend)",
+      "description": "Password Manager is a project that allows you to store your passwords in a secure way. Desing with Django and Django Rest Framework.",
       "imgUrl": "/images/projects/1.png",
-      "gitUrl": "https://github.com",
+      "gitUrl": "https://github.com/DevSergioGC/password-manager-backend-refactor",
       "previewUrl": "https://github.com/DevSergioGC",
-      "tag": ["All", "Web"]
+      "tag": ["all", "backend"]
     },
     {
-      "name": "Project 2",
-      "description": "This is a project",
+      "name": "Password Manager (Frontend)",
+      "description": "Password Manager is a project that allows you to store your passwords in a secure way. Desing with ReactJS",
       "imgUrl": "/images/projects/2.png",
-      "gitUrl": "https://github.com",
+      "gitUrl": "https://github.com/DevSergioGC/Password-Manager-Frontend-CCNT-",
       "previewUrl": "https://github.com/DevSergioGC",
-      "tag": ["All", "Web"]
+      "tag": ["all", "frontend"]
     },
     {
-      "name": "Project 3",
-      "description": "This is a project",
+      "name": "Store API",
+      "description": "RestAPI of a store. Desing with Flask and Python.",
       "imgUrl": "/images/projects/3.png",
-      "gitUrl": "https://github.com",
+      "gitUrl": "https://github.com/DevSergioGC/Flask-first_rest_API",
       "previewUrl": "https://github.com/DevSergioGC",
-      "tag": ["All", "Web"]
+      "tag": ["all", "backend"]
     },
     {
-      "name": "Project 4",
-      "description": "This is a project",
+      "name": "Products API",
+      "description": "Small product rest api with express and nodejs.",
       "imgUrl": "/images/projects/4.png",
-      "gitUrl": "https://github.com",
+      "gitUrl": "https://github.com/DevSergioGC/api-rest-2",
       "previewUrl": "https://github.com/DevSergioGC",
-      "tag": ["All", "Web"]
+      "tag": ["all", "backend"]
     },
     {
       "name": "Project 5",
@@ -107,7 +193,7 @@
       "imgUrl": "/images/projects/5.png",
       "gitUrl": "https://github.com",
       "previewUrl": "https://github.com/DevSergioGC",
-      "tag": ["All", "Mobile"]
+      "tag": ["all", "frontend"]
     },
     {
       "name": "Project 6",
@@ -115,7 +201,7 @@
       "imgUrl": "/images/projects/6.png",
       "gitUrl": "https://github.com",
       "previewUrl": "https://github.com/DevSergioGC",
-      "tag": ["All", "Mobile"]
+      "tag": ["all", "frontend"]
     }
   ]
 }
