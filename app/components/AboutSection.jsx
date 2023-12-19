@@ -2,7 +2,6 @@
 import React, { useTransition, useState } from "react";
 import TabButton from "./TabButton";
 import generalData from "../data/generalData.json";
-
 import IconSquare from "./IconSquare";
 
 function AboutSection() {
@@ -22,7 +21,7 @@ function AboutSection() {
       <h2 className="text-center text-4xl font-bold text-white mt-8 mb-8 md:mb-12">
         About Me
       </h2>
-      <div className="flex flex-row justify-center mt-8 text-2xl">
+      <div className="flex flex-row justify-center mt-8 text-lg">
         {tabsData.map((tabName) => (
           <TabButton
             selectTab={() => handleTabChange(tabName)}
