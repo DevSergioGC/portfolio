@@ -4,7 +4,7 @@ import Link from "next/link";
 import NavLink from "./NavLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
-import { useDarkMode } from "./DarkModeContext";
+// import { useDarkMode } from "./DarkModeContext";
 
 const navLinks = [
   {
@@ -22,7 +22,7 @@ const navLinks = [
 ];
 
 function NavBar() {
-  const { darkMode, toggleDarkMode } = useDarkMode();
+  // const { darkMode, toggleDarkMode } = useDarkMode();
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
@@ -34,9 +34,9 @@ function NavBar() {
         >
           Logo
         </Link>
-        <button onClick={toggleDarkMode}>
+        {/* <button onClick={toggleDarkMode}>
           {darkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
-        </button>
+        </button> */}
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
             <button
