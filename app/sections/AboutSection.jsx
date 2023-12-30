@@ -1,9 +1,9 @@
 "use client";
 import React, { useTransition, useState } from "react";
-import TabButton from "./TabButton";
+import TabButton from "../components/TabButton";
 import generalData from "../data/generalData.json";
-import IconSquare from "./IconSquare";
-import MainSkills from "./MainSkills";
+import IconSquare from "../components/IconSquare";
+import MainSkills from "../components/MainSkills";
 
 function AboutSection() {
   const tabsData = Object.keys(generalData).slice(0, 3);
@@ -18,16 +18,16 @@ function AboutSection() {
   };
 
   return (
-    <section className="text-white" id="about">
-      <h2 className="text-center text-4xl font-bold text-white mt-8 mb-8 md:mb-12">
+    <section className="dark:text-white text-black" id="about">
+      <h2 className="text-center text-4xl font-bold mt-8 mb-8 md:mb-12">
         About Me
       </h2>
       <div className="flex flex-row justify-center mt-8 text-lg">
-        {tab === "skills" && (
+        {/* {tab === "skills" && (
           {dataSelected.map((item, index) => (
             <MainSkills name={item.name} key={index} />
           ))}
-        )}
+        )} */}
         {tabsData.map((tabName) => (
           <TabButton
             selectTab={() => handleTabChange(tabName)}

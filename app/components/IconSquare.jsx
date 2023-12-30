@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import Image from "next/image";
 import ModalComponent from "./ModalComponent";
 
-const IconSquare = ({ name, tab, key, isMain }) => {
+const IconSquare = ({ name, tab, key }) => {
   const boxStyle = [
-    "bg-[#181818] rounded-md p-4 text-white flex flex-col items-center",
-    "bg-[#181818] rounded-md p-4 text-white flex flex-col items-center hover:bg-gray-500 hover:cursor-pointer",
+    "dark:bg-[#181818] bg-light-shadow-box rounded-md p-4 dark:text-white text-black flex flex-col items-center",
+    "dark:bg-[#181818] bg-light-shadow-box rounded-md p-4 dark:text-white text-black flex flex-col items-center dark:hover:bg-gray-500 hover:bg-[#C0C0C0] hover:cursor-pointer",
   ];
   const [isModalOpen, setIsModalOpen] = useState(false);
   const openModal = () => {
@@ -19,7 +19,7 @@ const IconSquare = ({ name, tab, key, isMain }) => {
   return (
     <div>
       <div index={key} className={tab !== "skills" ? boxStyle[1] : boxStyle[0]}>
-        {tab === "skills" && !isMain && (
+        {tab === "skills" && (
           <div className="icon w-12 h-12 mb-2">
             <Image
               src={`/images/icons/${name.toLowerCase()}-logo.png`}
@@ -28,9 +28,6 @@ const IconSquare = ({ name, tab, key, isMain }) => {
               height={25}
             />
           </div>
-        )}
-        {isMain && (
-          <div className="rank text-xs text-gray-400 mb-2">{isMain}</div>
         )}
         {isModalOpen && tab != "skills" && (
           <ModalComponent onClose={closeModal}>
