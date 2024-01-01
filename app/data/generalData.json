@@ -91,11 +91,15 @@
   "education": [
     {
       "name": "System Engineer",
-      "description": "Bachelor's degree in Systems Engineering."
+      "description": "Bachelor's degree in Systems Engineering.",
+      "latest": true,
+      "date": "2017-2022"
     },
     {
       "name": "Technical in Electricity",
-      "description": "Technical in Electricity."
+      "description": "Technical in Electricity.",
+      "latest": false,
+      "date": "2013-2017"
     }
   ],
   "certifications": [
