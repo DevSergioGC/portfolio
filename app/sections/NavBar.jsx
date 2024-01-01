@@ -1,9 +1,10 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
-import NavLink from "./NavLink";
+import NavLink from "../components/NavLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
-import MenuOverlay from "./MenuOverlay";
+import MenuOverlay from "../components/MenuOverlay";
+import ThemeToggle from "../components/ThemeToggle";
 
 const navLinks = [
   {
@@ -24,14 +25,15 @@ function NavBar() {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100">
+    <nav className="fixed top-0 left-0 right-0 z-10 dark:bg-medium bg-light-shadow-box font-sans">
       <div className="flex flex-wrap items-center justify-between mx-auto px-4 py-2">
         <Link
           href={"/"}
-          className="text-2xl md:text-5xl text-white font-semibold"
+          className="text-2xl md:text-5xl text-black font-semibold dark:text-white"
         >
           Logo
         </Link>
+        <ThemeToggle />
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
             <button
@@ -50,7 +52,7 @@ function NavBar() {
           )}
         </div>
         <div className="menu hidden md:block md:w-auto" id="navbar">
-          <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
+          <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0 dark:text-white text-black">
             {navLinks.map((link, index) => (
               <li key={index}>
                 <NavLink href={link.path} title={link.title} />

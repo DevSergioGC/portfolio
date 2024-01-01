@@ -1,25 +1,37 @@
 {
   "skills": [
     {
-      "name": "Python"
+      "name": "Python",
+      "rank": "main"
     },
     {
-      "name": "C#"
+      "name": "JavaScript",
+      "rank": "main"
     },
     {
-      "name": "JavaScript"
+      "name": "Django",
+      "rank": "main"
+    },
+    {
+      "name": "Flask",
+      "rank": "main"
+    },
+    {
+      "name": "Express",
+      "rank": "main"
+    },
+    {
+      "name": "RestAPI",
+      "rank": "main"
+    },
+    {
+      "name": "C Sharp"
     },
     {
       "name": "HTML"
     },
     {
       "name": "CSS"
-    },
-    {
-      "name": "Django"
-    },
-    {
-      "name": "Flask"
     },
     {
       "name": "ReactJS"
@@ -31,13 +43,7 @@
       "name": "Material UI"
     },
     {
-      "name": "RestAPI"
-    },
-    {
       "name": "NodeJS"
-    },
-    {
-      "name": "Express"
     },
     {
       "name": "NestJS"
@@ -77,20 +83,23 @@
     },
     {
       "name": "SOLID"
+    },
+    {
+      "name": "Tailwind CSS"
     }
   ],
   "education": [
     {
-      "name": "Education #1",
-      "description": "This is an education"
+      "name": "System Engineer",
+      "description": "Bachelor's degree in Systems Engineering.",
+      "latest": true,
+      "date": "2017-2022"
     },
     {
-      "name": "Education #2",
-      "description": "This is an education"
-    },
-    {
-      "name": "Education #3",
-      "description": "This is an education"
+      "name": "Technical in Electricity",
+      "description": "Technical in Electricity.",
+      "latest": false,
+      "date": "2013-2017"
     }
   ],
   "certifications": [
