@@ -28,8 +28,9 @@ const IconSquare = ({ name, tab, key }) => {
               height={25}
             />
           </div>
+          
         )}
-        {isModalOpen && tab != "skills" && (
+        {/* {isModalOpen && tab != "skills" && (
           <ModalComponent onClose={closeModal}>
             <Image
               src={`/images/certificates/${name
@@ -42,7 +43,7 @@ const IconSquare = ({ name, tab, key }) => {
               height={500}
             />
           </ModalComponent>
-        )}
+        )} */}
         <div
           className="text-center"
           onClick={tab != "skill" ? openModal : null}

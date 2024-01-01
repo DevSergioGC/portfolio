@@ -4,6 +4,7 @@ import TabButton from "../components/TabButton";
 import generalData from "../data/generalData.json";
 import IconSquare from "../components/IconSquare";
 import MainSkills from "../components/MainSkills";
+import TimeLine from "../components/TimeLine";
 
 function AboutSection() {
   const tabsData = Object.keys(generalData).slice(0, 3);
@@ -23,11 +24,6 @@ function AboutSection() {
         About Me
       </h2>
       <div className="flex flex-row justify-center mt-8 text-lg">
-        {/* {tab === "skills" && (
-          {dataSelected.map((item, index) => (
-            <MainSkills name={item.name} key={index} />
-          ))}
-        )} */}
         {tabsData.map((tabName) => (
           <TabButton
             selectTab={() => handleTabChange(tabName)}
@@ -39,16 +35,19 @@ function AboutSection() {
         ))}
       </div>
       <div className="flex flex-col items-center justify-center p-10 mt-6 mb-6">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {dataSelected.map((item, index) => (
-            <IconSquare
-              name={item.name}
-              key={index}
-              tab={tab}
-              isMain={item.rank ? true : false}
-            />
-          ))}
-        </div>
+        {tab === "skills" && (
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {dataSelected.map((item, index) => (
+              <IconSquare
+                name={item.name}
+                key={index}
+                tab={tab}
+                isMain={item.rank ? true : false}
+              />
+            ))}
+          </div>
+        )}
+        {tab === "education" && <TimeLine data={dataSelected} />}
       </div>
     </section>
   );
