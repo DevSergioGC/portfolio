@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
+import DropdownButton from "../components/DropdownButton";
 
 function HeroSection() {
   return (
@@ -34,9 +35,7 @@ function HeroSection() {
             learn new ones.
           </p>
           <div>
-            <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-light-transition1 via-light-button to-light-transition2 dark:from-[#36C4E5] dark:via-[#E5624F] dark:to-[#E3223E] text-white">
-              Download CV
-            </button>
+            <DropdownButton title="Download CV" items={['ES', 'EN']} className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-light-transition1 via-light-button to-light-transition2 dark:from-[#36C4E5] dark:via-[#E5624F] dark:to-[#E3223E] text-white" />
           </div>
         </motion.div>
         <motion.div
