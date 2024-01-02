@@ -5,6 +5,8 @@ import generalData from "../data/generalData.json";
 import IconSquare from "../components/IconSquare";
 import MainSkills from "../components/MainSkills";
 import TimeLine from "../components/TimeLine";
+import Table from "../components/Table";
+import { data } from "autoprefixer";
 
 function AboutSection() {
   const tabsData = Object.keys(generalData).slice(0, 3);
@@ -35,19 +37,9 @@ function AboutSection() {
         ))}
       </div>
       <div className="flex flex-col items-center justify-center p-10 mt-6 mb-6">
-        {tab === "skills" && (
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {dataSelected.map((item, index) => (
-              <IconSquare
-                name={item.name}
-                key={index}
-                tab={tab}
-                isMain={item.rank ? true : false}
-              />
-            ))}
-          </div>
-        )}
+        {tab === "skills" && <IconSquare data={dataSelected} />}
         {tab === "education" && <TimeLine data={dataSelected} />}
+        {tab === "certifications" && <Table data={dataSelected} />}
       </div>
     </section>
   );
