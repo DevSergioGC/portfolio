@@ -4,8 +4,9 @@ import AboutSection from "./sections/AboutSection";
 import ProjectSection from "./sections/ProjectSection";
 import EmailSection from "./sections/EmailSection";
 import Footer from "./sections/Footer";
+import { appWithTranslation } from 'next-i18next'
 
-export default function Home() {
+function Home() {
   return (
     <main
       className={`flex min-h-screen flex-col dark:bg-dark dark:text-white bg-light text-black`}
@@ -20,3 +21,5 @@ export default function Home() {
     </main>
   );
 }
+
+export default appWithTranslation(Home);

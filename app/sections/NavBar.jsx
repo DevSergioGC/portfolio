@@ -5,23 +5,27 @@ import NavLink from "../components/NavLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "../components/MenuOverlay";
 import ThemeToggle from "../components/ThemeToggle";
-
-const navLinks = [
-  {
-    title: "About",
-    path: "#about",
-  },
-  {
-    title: "Projects",
-    path: "#projects",
-  },
-  {
-    title: "Contact",
-    path: "#contact",
-  },
-];
+import LocaleToogle from "../components/LocaleToogle";
+import { useTranslation } from "next-i18next";
 
 function NavBar() {
+  const { t } = useTranslation();
+  const navLinks = [
+    {
+      title: t("navbar"),
+      path: "#about",
+    },
+
+
+    {
+      title: "Projects",
+      path: "#projects",
+    },
+    {
+      title: "Contact",
+      path: "#contact",
+    },
+  ];
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
@@ -31,6 +35,7 @@ function NavBar() {
           Logo
         </Link>
         <ThemeToggle />
+        <LocaleToogle />
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
             <button
