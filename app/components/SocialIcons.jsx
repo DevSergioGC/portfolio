@@ -6,10 +6,10 @@ import LinkedInIcon from "./icons/LinkedInIcon";
 const SocialIcons = () => {
   return (
     <div className="socials flex flex-row gap-4">
-      <Link href="github.com">
+      <Link href="https://github.com/DevSergioGC" target="_blank">
         <GithubIcon />
       </Link>
-      <Link href="linkedin.com">
+      <Link href="https://linkedin.com/in/devsergiogc" target="_blank">
         <LinkedInIcon />
       </Link>
     </div>
