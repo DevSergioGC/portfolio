@@ -1,9 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import GithubIcon from "../../public/images/github-icon.svg";
-import LinkedinIcon from "../../public/images/linkedin-icon.svg";
-import Link from "next/link";
-import Image from "next/image";
 import SocialIcons from "../components/SocialIcons";
 
 const EmailSection = () => {
@@ -19,15 +15,11 @@ const EmailSection = () => {
     const JSONdata = JSON.stringify(data);
     const endpoint = "/api/send";
 
-    // Form the request for sending data to the server.
     const options = {
-      // The method is POST because we are sending data.
       method: "POST",
-      // Tell the server we're sending JSON.
       headers: {
         "Content-Type": "application/json",
       },
-      // Body of the request is the JSON data we created above.
       body: JSONdata,
     };
 
