@@ -1,11 +1,13 @@
 import React from "react";
+import SocialIcons from "../components/SocialIcons";
 
 const Footer = () => {
   return (
-    <footer className="footer border border-t-[#33353F] border-l-transparent border-r-transparent text-white">
+    <footer className="footer border border-t-light-shadow-box dark:border-t-dark-shadow-box border-l-transparent border-r-transparent">
       <div className="container p-12 flex justify-between">
         <span>LOGO</span>
-        <p className="text-slate-600">All rights reserved</p>
+        <SocialIcons />
+        <p className="text-light-paragraphs dark:text-dark-paragraphs">All rights reserved</p>
       </div>
     </footer>
   );

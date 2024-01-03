@@ -25,12 +25,9 @@ function NavBar() {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-10 dark:bg-medium bg-light-shadow-box font-sans">
+    <nav className="fixed top-0 left-0 right-0 z-10 dark:bg-dark-shadow-box bg-light-shadow-box font-sans">
       <div className="flex flex-wrap items-center justify-between mx-auto px-4 py-2">
-        <Link
-          href={"/"}
-          className="text-2xl md:text-5xl text-black font-semibold dark:text-white"
-        >
+        <Link href={"/"} className="text-2xl md:text-5xl  font-semibold ">
           Logo
         </Link>
         <ThemeToggle />
@@ -52,7 +49,7 @@ function NavBar() {
           )}
         </div>
         <div className="menu hidden md:block md:w-auto" id="navbar">
-          <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0 dark:text-white text-black">
+          <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0 ">
             {navLinks.map((link, index) => (
               <li key={index}>
                 <NavLink href={link.path} title={link.title} />

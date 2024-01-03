@@ -1,11 +1,6 @@
 import React from "react";
 
 const DropdownButton = ({ title, items, className }) => {
-  console.log(
-    "🚀 ~ file: DropdownButton.jsx:5 ~ DropdownButton ~ items:",
-    items
-  );
-
   return (
     <>
       <button

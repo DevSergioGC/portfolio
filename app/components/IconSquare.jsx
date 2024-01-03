@@ -7,7 +7,7 @@ const IconSquare = ({ data }) => {
       {data.map((item, index) => (
         <div
           index={index}
-          className="dark:bg-[#181818] bg-light-shadow-box rounded-md p-4 dark:text-white text-black flex flex-col items-center"
+          className="dark:bg-dark-shadow-box bg-light-shadow-box rounded-md p-4  flex flex-col items-center"
           key={index}
         >
           <div className="icon w-12 h-12 mb-2">
@@ -18,7 +18,7 @@ const IconSquare = ({ data }) => {
               height={50}
             />
           </div>
-          <div className="text-center">{item.name}</div>
+          <div className="text-center mt-2">{item.name}</div>
         </div>
       ))}
     </div>

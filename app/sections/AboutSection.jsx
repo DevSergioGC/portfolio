@@ -3,10 +3,8 @@ import React, { useTransition, useState } from "react";
 import TabButton from "../components/TabButton";
 import generalData from "../data/generalData.json";
 import IconSquare from "../components/IconSquare";
-import MainSkills from "../components/MainSkills";
 import TimeLine from "../components/TimeLine";
 import Table from "../components/Table";
-import { data } from "autoprefixer";
 
 function AboutSection() {
   const tabsData = Object.keys(generalData).slice(0, 3);
@@ -21,7 +19,7 @@ function AboutSection() {
   };
 
   return (
-    <section className="dark:text-white text-black" id="about">
+    <section className="dark:text-white text-light-titles" id="about">
       <h2 className="text-center text-4xl font-bold mt-8 mb-8 md:mb-12">
         About Me
       </h2>

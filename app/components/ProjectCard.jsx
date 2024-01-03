@@ -31,9 +31,9 @@ const ProjectCard = ({
           </Link>
         </div>
       </div>
-      <div className="dark:text-white rounded-b-xl dark:bg-[#181818] bg-light-shadow-box py-6 px-4">
+      <div className="rounded-b-xl dark:bg-dark-shadow-box bg-light-shadow-box py-6 px-4">
         <h5 className="font-xl font-semibold mb-2">{title}</h5>
-        <p className="dark:text-[#ADB7BE]">{description}</p>
+        <p className="text-light-paragraphs dark:text-dark-paragraphs">{description}</p>
       </div>
     </div>
   );

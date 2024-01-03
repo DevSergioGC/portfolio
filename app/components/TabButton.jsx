@@ -8,7 +8,7 @@ const variants = {
 
 const TabButton = ({ active, selectTab, children }) => {
   const buttonClasses = active
-    ? "dark:text-white text-black"
+    ? null
     : "dark:text-[#ADB7BE] text-[#BEBFC5]";
 
   return (
@@ -21,7 +21,7 @@ const TabButton = ({ active, selectTab, children }) => {
       <motion.div
         animate={active ? "active" : "default"}
         variants={variants}
-        className="h-1 dark:bg-[#36C4E5] bg-light-button mt-2 mr-3"
+        className="h-1 dark:bg-dark-button bg-light-button mt-2 mr-3"
       ></motion.div>
     </button>
   );
