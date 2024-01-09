@@ -6,17 +6,15 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "../components/MenuOverlay";
 import ThemeToggle from "../components/ThemeToggle";
 import LocaleToogle from "../components/LocaleToogle";
-import { useTranslation } from "next-i18next";
+import { useTranslation } from "react-i18next";
 
 function NavBar() {
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
   const navLinks = [
     {
-      title: t("navbar"),
+      title: "About",
       path: "#about",
     },
-
-
     {
       title: "Projects",
       path: "#projects",

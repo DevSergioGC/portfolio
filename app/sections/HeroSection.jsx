@@ -41,7 +41,7 @@ function HeroSection() {
           <div>
             <DropdownButton
               title="Download CV"
-              items={["ES", "EN"]}
+              items={["EN CV", "ES CV"]}
               className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-light-transition1 via-light-transition2 to-light-transition3 dark:from-dark-transition1 dark:via-dark-transition2 dark:to-dark-transition3 text-white"
             />
           </div>

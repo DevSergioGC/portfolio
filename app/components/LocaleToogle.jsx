@@ -1,62 +1,43 @@
-import React from "react";
-import { useTranslation } from "next-i18next";
+"use client";
 
-const LocaleToogle = () => {
+import { useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
+import { useTranslation } from "react-i18next";
+import i18nConfig from "../i18n";
+
+export default function LanguageChanger() {
   const { i18n } = useTranslation();
+  const currentLocale = i18n.language;
+  const router = useRouter();
+  const currentPathname = usePathname();
+
+  const handleChange = (e) => {
+    const newLocale = e.target.value;
+
+    const days = 30;
+    const date = new Date();
+    date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+    const expires = "; expires=" + date.toUTCString();
+    document.cookie = `NEXT_LOCALE=${newLocale};expires=${expires};path=/`;
+
+    if (
+      currentLocale === i18nConfig.defaultLocale &&
+      !i18nConfig.prefixDefault
+    ) {
+      router.push("/" + newLocale + currentPathname);
+    } else {
+      router.push(
+        currentPathname.replace(`/${currentLocale}`, `/${newLocale}`)
+      );
+    }
+
+    router.refresh();
+  };
+
   return (
-    <div className="">
-      <button
-        id="dropdownDefaultButton"
-        data-dropdown-toggle="dropdown"
-        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-        type="button"
-      >
-        Languague
-        <svg
-          class="w-2.5 h-2.5 ms-3"
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 10 6"
-        >
-          <path
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="m1 1 4 4 4-4"
-          />
-        </svg>
-      </button>
-
-      <div
-        id="dropdown"
-        class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
-      >
-        <ul
-          class="py-2 text-sm text-gray-700 dark:text-gray-200"
-          aria-labelledby="dropdownDefaultButton"
-        >
-          <li>
-            <a
-              onClick={() => i18n.changeLanguage("en")}
-              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-            >
-              EN
-            </a>
-          </li>
-          <li>
-            <a
-              onClick={() => i18n.changeLanguage("es")}
-              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-            >
-              ES
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
+    <select onChange={handleChange} value={currentLocale}>
+      <option value="en">English</option>
+      <option value="es">Spanish</option>
+    </select>
   );
-};
-
-export default LocaleToogle;
+}

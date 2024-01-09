@@ -5,8 +5,10 @@ import generalData from "../data/generalData.json";
 import IconSquare from "../components/IconSquare";
 import TimeLine from "../components/TimeLine";
 import Table from "../components/Table";
+import { useTranslation } from "react-i18next";
 
 function AboutSection() {
+  // const { t } = useTranslation();
   const tabsData = Object.keys(generalData).slice(0, 3);
   const [tab, setTab] = useState(tabsData[0]);
   const [isPending, startTransition] = useTransition();
@@ -21,7 +23,7 @@ function AboutSection() {
   return (
     <section className="dark:text-white text-light-titles" id="about">
       <h2 className="text-center text-4xl font-bold mt-8 mb-8 md:mb-12">
-        About Me
+        {/* {t('aboutSection')} */}
       </h2>
       <div className="flex flex-row justify-center mt-8 text-lg">
         {tabsData.map((tabName) => (

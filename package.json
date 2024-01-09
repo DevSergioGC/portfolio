@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "i18nexus pull && next dev",
+    "build": "i18nexus pull && next build",
+    "start": "i18nexus pull && next start",
     "lint": "next lint"
   },
   "dependencies": {
@@ -13,8 +13,10 @@
     "flowbite": "^2.2.1",
     "flowbite-react": "^0.7.2",
     "framer-motion": "^10.16.4",
-    "i18next": "^23.7.15",
+    "i18next": "^23.7.16",
+    "i18next-resources-to-backend": "^1.2.0",
     "next": "13.5.5",
+    "next-i18n-router": "^5.1.0",
     "next-i18next": "^15.1.2",
     "next-transpile-modules": "^10.0.1",
     "react": "^18",
@@ -30,6 +32,7 @@
     "autoprefixer": "^10",
     "eslint": "^8",
     "eslint-config-next": "13.5.5",
+    "i18nexus-cli": "^3.3.0",
     "postcss": "^8",
     "tailwindcss": "^3"
   }
